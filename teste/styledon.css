@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.headng{
+    font-weight: 900;
+    font-size: 20px;
+    padding: auto;
+    color: rgb(3, 87, 214);
+    
+}
+/*barre de navigation*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(4, 128, 230, 0.856);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0;
+}
+.navbar ul li {
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:rgb(3, 4, 75);
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: rgb(248, 245, 245);
+    color: rgb(10, 198, 245);
+    box-shadow:rgba(7, 68, 235, 0.719);
+}
+/*partie home*/
+#accueil{
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(3, 173, 240);
+}
+#accueil::before{
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+background: url('54.jpg') no-repeat center/cover;
+height: 700px;
+width: 100%;
+z-index: -1;
+opacity: .8;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%; 
+    float: left;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+  #footer{
+    padding: 0px;
+    background-color: rgb(124, 128, 131);
+    margin: 0px;
+    position: relative;
+    margin-left: 80px;
+    }
+    .ft{
+    text-align: center;
+    }
+    /*footer*/
+main{
+    
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 174, 255);
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer{
+  
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  color: aqua;
+  background-color: rgb(0, 174, 255);
+}
+.footer > *{
+  flex: 1 100%;
+
+}
+.footer-left{
+
+margin-left: 200px;
+
+}
+.footer-left .img{
+  width: 350px;
+  height: 120px;
+  margin-left: 150px;
+  object-fit: cover;
+}
+h2{
+  font-weight: 600;
+  font-size: 17px;
+
+}
+.footer ul ul {
+  list-style: none;
+  padding: 0;
+  display: inline;
+}
+footer li{
+  line-height: 2em;
+}
+.footer a{
+  text-decoration: none;
+
+}
+.bax a{
+  color: #000;
+  display: inline;
+  margin-bottom: 0px;
+}
+.l1{
+  margin-bottom: 0px;
+}
+
+.footer-left p{
+  color: #000;
+  margin: 20px;
+  font-size: 30px;
+  margin-left: 250px;
+}
+.social a{
+  text-align:center;
+background: #c0d4f1;
+width: 30px;
+height: 30px;
+display:inline-block;
+margin: 15px ;
+
+
+}
+.social a img{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.lieu{
+  margin-left: 600px;
+  margin-bottom: 1000px;
+}
+.social{
+  margin-left: 150px;
+}
+.header .navbar img{
+  width: 200px;
+  height: 100px;
+  top: 2;
+  background-color:transparent;
+  object-fit: cover;
+
+}
+.header .navbare .email{
+  width: 200px;
+  height: 100px;
+  background-color: rgb(124, 128, 131);
+  position: relative;
+  margin-left: 80px;
+  background-color:transparent;
+  object-fit: cover;
+  float:right;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  font-size: 19px;
+}
